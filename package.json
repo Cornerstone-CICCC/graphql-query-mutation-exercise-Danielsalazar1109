@@ -5,16 +5,18 @@
   },
   "name": "exercise",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.ts",
   "dependencies": {
     "@apollo/server": "^4.11.2",
     "concurrently": "^9.1.0",
     "graphql": "^16.9.0",
+    "graphql-tag": "^2.12.6",
     "undici-types": "^6.20.0",
     "uuid": "^11.0.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon dist/server.js\""
   },
   "keywords": [],
   "author": "",
