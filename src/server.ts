@@ -2,8 +2,8 @@ import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { v4 as uuidv4 } from "uuid";
 
-// Interface
-interface Product {
+// Type
+type Product = {
   id: string;
   productName: string;
   price: number;
